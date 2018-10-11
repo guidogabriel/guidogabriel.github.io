@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_guido
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -12,7 +12,21 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+
+      {%- if page.tags -%}
+        • em 
+        {% for item in page.tags %}
+        <span class="post-tags">{{item}}
+          &nbsp;
+        </span>
+
+        {%endfor%}
+      {%- endif -%}
+
+      
+    </p>
+    
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
