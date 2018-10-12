@@ -24,6 +24,17 @@ p {
 
 .post-content {
 	font-size: 90%;
+	
+}
+
+.post-content p {
+	text-align: justify;
+}
+
+.post-content img {
+	display: block;
+	margin-left: auto;	
+	margin-right: auto;
 }
 
 .post-tags{
